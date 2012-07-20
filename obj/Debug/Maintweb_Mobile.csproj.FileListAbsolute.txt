@@ -1,0 +1,14 @@
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\ApplicationIcon.png
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\Background.png
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\Maintweb_Mobile.dll
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\Maintweb_Mobile.pdb
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\AppManifest.xaml
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\Maintweb_Mobile.xap
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\Bin\Debug\WP7CordovaClassLib.dll
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\App.g.i.cs
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\MainPage.g.i.cs
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\Maintweb_Mobile.g.resources
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\Maintweb_Mobile.dll
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\Maintweb_Mobile.pdb
+C:\Users\Ethan\Documents\Visual Studio 2010\Projects\Maintweb_Mobile\Maintweb_Mobile\Maintweb_Mobile\obj\Debug\XapCacheFile.xml

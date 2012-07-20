@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This file is auto-generated, do not edit! -jm -->
+<CordovaSourceDictionary>
+    <FilePath Value="www\images\maintweb_logo_generic.png"/>
+    <FilePath Value="www\images\wireless.png"/>
+    <FilePath Value="www\javascript\jquery.js"/>
+    <FilePath Value="www\javascript\jquery.tabify.js"/>
+    <FilePath Value="www\javascript\jquery.tabify.source.js"/>
+    <FilePath Value="www\cordova-1.8.1.js"/>
+    <FilePath Value="www\index.html"/>
+    <FilePath Value="www\javascript\xui.js"/>
+    <FilePath Value="www\master.css"/>
+</CordovaSourceDictionary>
