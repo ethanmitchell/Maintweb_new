@@ -39,8 +39,8 @@
         {
             //document.getElementById("welcomeMsg").innerHTML += "Cordova is ready! version=" + window.device.cordova;
             //console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
-            var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-            db.transaction(populateDB, errorCB, successCB);
+            //var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+            //db.transaction(populateDB, errorCB, successCB);
 
 
         }
@@ -57,9 +57,9 @@
             document.getElementById('archived').style.height = myHeight + "px";
 
             //Creating and populating database
-            var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-            db.transaction(populateDB, errorCB, successCB);
-            document.getElementById('initiated').innerHTML = "3";
+            //var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+            //db.transaction(populateDB, errorCB, successCB);
+            //document.getElementById('initiated').innerHTML = "3";
 
         });
 
@@ -144,82 +144,60 @@ function connected() {
     document.getElementById('archived').innerHTML = "Connection Successful";
     document.getElementById('connected').innerHTML = "<img src='images/wireless.png' alt='Wireless' /><hr />";
 }
-
+/*
 function populateDB(tx) {
-    tx.executeSql('DROP TABLE IF EXISTS DEMO');
-    tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (3, "Second row")');
-    tx.executeSql('INSERT INTO DEMO (id, data) VALUES (, "Second row")');
+tx.executeSql('DROP TABLE IF EXISTS DEMO');
+tx.executeSql('CREATE TABLE IF NOT EXISTS DEMO (id unique, data)');
+tx.executeSql('INSERT INTO DEMO (id, data) VALUES (1, "First row")');
+tx.executeSql('INSERT INTO DEMO (id, data) VALUES (2, "Second row")');
+tx.executeSql('INSERT INTO DEMO (id, data) VALUES (3, "Second row")');
+tx.executeSql('INSERT INTO DEMO (id, data) VALUES (, "Second row")');
 
    
-    populationsuccess();
+populationsuccess();
 }
 
 function populationsuccess() {
-    document.getElementById('initiated').innerHTML += "Datebase Populaton Success";
-    }
+document.getElementById('initiated').innerHTML += "Datebase Populaton Success";
+}
 
 
 function errorCB(err) {
-    alert("Error processing SQL: " + err.code);
+alert("Error processing SQL: " + err.code);
 }
 
 function successCB() {
-    var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
-    db.transaction(queryDB, errorCB);
+var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
+db.transaction(queryDB, errorCB);
 
-    document.getElementById('initiated').innerHTML += "4";
+document.getElementById('initiated').innerHTML += "4";
 }
 
 function queryDB(tx) {
 
-    tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
-    document.getElementById('initiated').innerHTML += "5";
+tx.executeSql('SELECT * FROM DEMO', [], querySuccess, errorCB);
+document.getElementById('initiated').innerHTML += "5";
 }
 
 function querySuccess(tx, results) {
-   alert("Returned rows = " + results.rows.length);
-    document.getElementById('initiated').innerHTML += "6";
-    // this will be true since it was a select statement and so rowsAffected was 0
-    if (!resultSet.rowsAffected) {
-        document.getElementById('initiated').innerHTML += "7";
-        alert('No rows affected!');
-        return false;
-    }
-    // for an insert statement, this property will return the ID of the last inserted row
-    console.log("Last inserted row ID = " + results.insertId);
-    document.getElementById('initiated').innerHTML += "8";
+alert("Returned rows = " + results.rows.length);
+document.getElementById('initiated').innerHTML += "6";
+// this will be true since it was a select statement and so rowsAffected was 0
+if (!resultSet.rowsAffected) {
+document.getElementById('initiated').innerHTML += "7";
+alert('No rows affected!');
+return false;
+}
+// for an insert statement, this property will return the ID of the last inserted row
+console.log("Last inserted row ID = " + results.insertId);
+document.getElementById('initiated').innerHTML += "8";
 }
 
 function errorCB(err) {
-    alert("Error processing SQL: " + err.code);
+alert("Error processing SQL: " + err.code);
 }
-
+*/
         </script>
-        <script type="text/javascript">
-            (function (doc) {
-
-                var addEvent = 'addEventListener',
-        type = 'gesturestart',
-        qsa = 'querySelectorAll',
-        scales = [1, 1],
-        meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
-
-                function fix() {
-                    meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
-                    doc.removeEventListener(type, fix, true);
-                }
-
-                if ((meta = meta[meta.length - 1]) && addEvent in doc) {
-                    fix();
-                    scales = [.25, 1.6];
-                    doc[addEvent](type, fix, true);
-                }
-
-            } (document));
-</script>
 
   </head>
   <body>
