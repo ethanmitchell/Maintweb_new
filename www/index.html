@@ -51,10 +51,10 @@
 
             //Setting up Heights
             var myHeight = window.innerHeight / 2;
-            document.getElementById('forapproval').style.height = myHeight + "px";
             document.getElementById('mycases').style.height = myHeight + "px";
-            document.getElementById('initiated').style.height = myHeight + "px";
-            document.getElementById('archived').style.height = myHeight + "px";
+            document.getElementById('actionlist').style.height = myHeight + "px";
+            document.getElementById('contact').style.height = myHeight + "px";
+            document.getElementById('options').style.height = myHeight + "px";
 
             //Creating and populating database
             //var db = window.openDatabase("Database", "1.0", "Cordova Demo", 200000);
@@ -141,8 +141,7 @@
             }
 
 function connected() {
-    document.getElementById('archived').innerHTML = "Connection Successful";
-    document.getElementById('connected').innerHTML = "<img src='images/wireless.png' alt='Wireless' /><hr />";
+    document.getElementById('connected').innerHTML = "<strong>available</strong> via <img src='images/wireless.png' alt='Wireless' /><hr />";
 }
 /*
 function populateDB(tx) {
@@ -207,12 +206,14 @@ alert("Error processing SQL: " + err.code);
 
     <div class="maincontent">
 		<ul id="menu" class="tabs">
-			<li class="active"><a href="#forapproval">For Approval</a></li>
-			<li><a href="#mycases">My Cases</a></li>
-			<li><a href="#initiated">Initiated</a></li>
-            <li><a href="#archived">Archived</a></li>
+			<li class="active"><a href="#mycases">My Cases</a></li>
+			<li><a href="#actionlist">Action List</a></li>
+            
+            <li class="alignright"><a class="smalltab" href="#options">O</a></li>
+            <li class="alignright"><a class="smalltab" href="#contact">C</a></li>
+   
 		</ul>
-		<div id="forapproval" class="content">
+		<div id="mycases" class="content">
         <table>
         <tbody>
         <tr><td><strong>10458</strong></td><td>60</td><td>K-256</td></tr>
@@ -245,7 +246,7 @@ alert("Error processing SQL: " + err.code);
         </tbody>
         </table>
 		</div>
-		<div id="mycases" class="content">
+		<div id="actionlist" class="content">
         Device Id:<input id="deviceId" type="text" name="deviceId" />  <button onclick="scheduledWorkOrders()">Get Workorders</button>  <button onclick="getSystemVersion()">Get System Version</button>  
             <div id="returned_information">
                 Put Stuff in Me
@@ -265,18 +266,15 @@ alert("Error processing SQL: " + err.code);
             </div>
 
 		</div>
-
-		<div id="initiated" class="content">
-        <p></p>
-		</div>
-
-        <div id="archived" class="content">
-
-		</div>
-
-
+        <div id="contact" class="content">
+        
+        
         </div>
-		<div class="connection">System Status: <strong>available</strong> via <div id="connected"></div> <span class="smallfont">System last Synychronized on 18th Feburary 2011 10:14:42</span></div>
+        <div id="options" class="content">
+        
+        </div>
+        </div>
+		<div class="connection">System Status: <div id="connected"><strong>Unavailable</strong></div> <span class="smallfont">System last Synychronized on 18th Feburary 2011 10:14:42</span></div>
         <div class="footer"><p>Logged on as: demoUser | <a href="#">log out</a></p></div>   
 
   </div>
