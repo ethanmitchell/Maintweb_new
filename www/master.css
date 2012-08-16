@@ -9,12 +9,20 @@
     padding: 0px;
     height:100%;
   }
-
+table
+{
+    width:100%;
+}
   h1
   {
      font-size:18px;
   }
   
+.title
+  {
+   margin: 10px 2px 0 15%;
+   border-bottom:2px solid #670100;
+  }
   img
   {
    padding:0px;
@@ -60,7 +68,7 @@ td
 }
 td:first-child
 {
-    padding-top:5px;
+    padding-top:0px;
 }
 
 .connection
@@ -100,4 +108,8 @@ display:inline;
     padding:5px 8px;
     padding-right:0px;
     
+}
+.identifer
+{
+ width:15%;   
 }
