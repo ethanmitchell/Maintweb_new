@@ -105,7 +105,12 @@
     <None Include="BuildManifestProcessor.js" />
     <Content Include="GapLib\WP7CordovaClassLib.dll" />
     <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
+    <Content Include="www\images\contact.png" />
+    <Content Include="www\images\gear.png" />
+    <Content Include="www\images\green_case.png" />
     <Content Include="www\images\maintweb_logo_generic.png" />
+    <Content Include="www\images\not_initiated.png" />
+    <Content Include="www\images\orange_case.png" />
     <Content Include="www\images\wireless.png" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />
