@@ -112,15 +112,14 @@
     <Content Include="www\images\not_initiated.png" />
     <Content Include="www\images\orange_case.png" />
     <Content Include="www\images\wireless.png" />
-    <Content Include="www\index.html" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />
     <Content Include="www\javascript\jquery.tabify.source.js" />
     <Content Include="www\cordova-1.8.1.js" />
-    <Content Include="www\main.html">
+    <Content Include="www\index.html">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="www\javascript\xui.js" />
+    <Content Include="www\javascript\xui-2.3.2.js" />
     <Content Include="www\master.css" />
     <None Include="cordova\debug.bat" />
     <None Include="cordova\emulate.bat" />
@@ -131,6 +130,7 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="www\web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">

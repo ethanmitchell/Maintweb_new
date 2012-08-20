@@ -18,6 +18,7 @@
 	<icon src="icon.png" gap:role="default" />
 	<gap:splash src="SpalshScreenImage.png" />
 	<preference name="autorotate" value="false" readonly="true"/>
+	<preference name="fullscreen" value="true" />
 	
 
 </widget>
