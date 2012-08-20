@@ -112,11 +112,12 @@
     <Content Include="www\images\not_initiated.png" />
     <Content Include="www\images\orange_case.png" />
     <Content Include="www\images\wireless.png" />
+    <Content Include="www\index.html" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />
     <Content Include="www\javascript\jquery.tabify.source.js" />
     <Content Include="www\cordova-1.8.1.js" />
-    <Content Include="www\index.html">
+    <Content Include="www\main.html">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="www\javascript\xui.js" />

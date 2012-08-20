@@ -16,8 +16,8 @@
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
+	<gap:splash src="SpalshScreenImage.png" />
 	<preference name="autorotate" value="false" readonly="true"/>
-	
 	
 
 </widget>

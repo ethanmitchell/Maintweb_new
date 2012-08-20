@@ -8,11 +8,12 @@
     <FilePath Value="www\images\not_initiated.png"/>
     <FilePath Value="www\images\orange_case.png"/>
     <FilePath Value="www\images\wireless.png"/>
+    <FilePath Value="www\index.html"/>
     <FilePath Value="www\javascript\jquery.js"/>
     <FilePath Value="www\javascript\jquery.tabify.js"/>
     <FilePath Value="www\javascript\jquery.tabify.source.js"/>
     <FilePath Value="www\cordova-1.8.1.js"/>
-    <FilePath Value="www\index.html"/>
+    <FilePath Value="www\main.html"/>
     <FilePath Value="www\javascript\xui.js"/>
     <FilePath Value="www\master.css"/>
 </CordovaSourceDictionary>
