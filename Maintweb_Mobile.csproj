@@ -130,7 +130,6 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="ServiceReferences.ClientConfig" />
-    <None Include="www\web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ApplicationIcon.png">

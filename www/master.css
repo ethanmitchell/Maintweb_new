@@ -80,11 +80,7 @@ td:first-child
 }
 
 .footer
-{
- margin:0px;
- padding:0px;
- position:absolute;
- bottom:0px;   
+{ 
 }
 .login-info
 {
