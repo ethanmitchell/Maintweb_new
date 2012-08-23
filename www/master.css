@@ -1,6 +1,6 @@
   
   
-  body 
+  html, body 
   {
     background:#fff none repeat scroll 0 0;
     color:#ccc;
@@ -113,4 +113,32 @@ display:inline;
 .identifer
 {
  width:15%;   
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#fff;
+   text-align:center;
+   
+}
+#body {
+   margin-left:7%;
+   margin-right:7%;
+   padding-bottom:30px;   /* Height of the footer */
+}
+#footer 
+{
+
+   position:absolute;
+   bottom:0;
+   margin-left:7%;
+   margin-bottom:3%;
+   width:86%;
+   height:30px;   /* Height of the footer */
+   background:#fff;
+   text-align:center;
+   
 }
