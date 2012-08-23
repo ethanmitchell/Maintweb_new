@@ -16,7 +16,7 @@
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
-	<gap:splash src="SpalshScreenImage.png" gap:role="default" />
+	<gap:splash src="SpalshScreenImage.png" />
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
 	
