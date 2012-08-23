@@ -4,7 +4,7 @@
 	id		= "com.maintweb.firstline"
 	version 	= "1.0.0">
 
-	<name>Maintweb: Alpha</name>
+	<name>Maintweb V0.1</name>
 
 	<description>
 		A template for getting started with Maintweb development.
