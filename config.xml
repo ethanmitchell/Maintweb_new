@@ -16,10 +16,11 @@
 	</author>
 
 	<icon src="icon.png" gap:role="default" />
-	<gap:splash src="SpalshScreenImage.png" />
+	<gap:splash src="splash.png" />
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
 	<preference name="webviewbounce" value="false" />
+	<preference name="show-splash-screen-spinner" value="false" />
 	
 
 </widget>
