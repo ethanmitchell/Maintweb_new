@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
+    <FilePath Value="www\CaseOverview.html"/>
     <FilePath Value="www\images\contact.png"/>
     <FilePath Value="www\images\gear.png"/>
     <FilePath Value="www\images\green_case.png"/>

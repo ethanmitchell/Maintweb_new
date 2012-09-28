@@ -106,6 +106,7 @@
     <Content Include="GapLib\WP7CordovaClassLib.dll" />
     <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
     <Resource Include="splash.png" />
+    <Content Include="www\CaseOverview.html" />
     <Content Include="www\images\contact.png" />
     <Content Include="www\images\gear.png" />
     <Content Include="www\images\green_case.png" />

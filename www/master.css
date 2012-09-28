@@ -43,9 +43,11 @@ img
     width:86%;
     margin:0px auto 0px auto;
     height:100%;
-    text-align:center;
+ 
 }
-
+.inneroverview
+{
+}
 .logo
 {
  margin-bottom:0;
@@ -141,4 +143,15 @@ display:inline;
    background:#fff;
    text-align:center;
    
+}
+
+.descriptionbox
+{
+ width:70%;   
+}
+
+#description
+{
+ font-size:12px;
+ vertical-align:top;   
 }

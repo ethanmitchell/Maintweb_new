@@ -53,11 +53,10 @@
 
             //Setting up Heights
             var myHeight = window.innerHeight / 2;
-            document.getElementById('mycases').style.height = myHeight + "px";
-            document.getElementById('actionlist').style.height = myHeight + "px";
-            document.getElementById('contact').style.height = myHeight + "px";
-            document.getElementById('options').style.height = myHeight + "px";
-
+            $('#mycases').css('height', myHeight + 'px');
+            $('#actionlist').css('height', myHeight + 'px');
+            $('#contact').css('height', myHeight + 'px');
+            $('#options').css('height', myHeight + 'px');
 
         });
 
@@ -79,13 +78,16 @@
                            var status = this.responseText;
 
                            if (status) {
-                               document.getElementById('returned_information').innerHTML = 'The System is online.';
+                               //document.getElementById('returned_information').innerHTML = 'The System is online.';
+                               //$('#mycases').html('The System is online.');
+                               connected();
                            } else {
-                               document.getElementById('returned_information').innerHTML = 'The System is offline, ' + status + '.';
+                               //document.getElementById('returned_information').innerHTML = 'The System is offline, ' + status + '.';
+                               $('#connected').html('The System is offline.');
                            }
                        }
                    });
-                this.connected();
+                   
             });
             </script>
 
@@ -96,7 +98,7 @@
                 //x$.data = {};
                 //Get Scheduled work Orders web Service
                 var url = 'http://test.blackfish.no/WebServices/mobileSync.asmx/GetScheduledWorkOrders';
-                var device = document.getElementById('deviceId').value;
+                var device = $('#deviceId').value; //document.getElementById('deviceId').value;
                 x$("#returned_workorders").xhr(url, { method: 'post',
                     //_deviceId: 'statoil001',
                     //headers: { 'Content-Type': 'text/xml' },
@@ -119,7 +121,7 @@
             function getSystemVersion() {
                 //Get System Version web Service
                 var urlversion = 'http://test.blackfish.no/WebServices/mobileSync.asmx/CheckSystemVersion';
-                var device = document.getElementById('deviceId').value;
+                var device = $('#deviceId').value; //document.getElementById('deviceId').value;
                 x$("#returned_version").xhr(urlversion, { method: 'post',
                     //_deviceId: 'statoil001',
                     //headers: { 'Content-Type': 'text/xml' },
@@ -139,7 +141,7 @@
             }
 
 function connected() {
-    document.getElementById('connected').innerHTML = "<strong>available</strong> via <img src='images/wireless.png' alt='Wireless' />";
+    $('#connected').html('<strong>available</strong> via <img src="images/wireless.png" alt="Wireless" />');
 }
         </script>
 
@@ -163,7 +165,7 @@ function connected() {
 		</ul>
 		<div id="mycases" class="content">
         <table>
-        <tr><td rowspan="2"><img src="images/green_case.png" alt="In review" /></td><td><strong>10458</strong></td><td>60</td><td>K-256</td></tr>
+        <tr><td rowspan="2"><img src="images/green_case.png" alt="In review" /></td><td><strong><a href="CaseOverview.html">10458</a></strong></td><td>60</td><td>K-256</td></tr>
         <tr ><td class="seperator" colspan="3">Endre tegning 801-89-1, for K-256</td></tr>
 
         <tr><td rowspan="2"><img src="images/green_case.png" alt="In review" /></td><td><strong>10355</strong></td><td>462200</td><td>3"-AI-2079-L</td></tr>
@@ -223,7 +225,9 @@ function connected() {
             -->
 		</div>
         <div id="contact" class="content">
-        
+            <div id="returned_information">
+            Put stuff here
+            </div>
         
         </div>
         <div id="options" class="content">
