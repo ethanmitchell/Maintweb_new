@@ -33,28 +33,51 @@
 
             <script type="text/javascript">
                 $(document).ready(function () {
-                    $('.descriptionbox').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
-                    $('.timeline').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
-                    $('.attachments').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
-
                     //Setting Heights
                     var myHeight = window.innerHeight / 3;
+                    var descriptionHeight = window.innerHeight / 5;
+                    $('.descriptionbox').css('height', descriptionHeight + 'px');
                     $('.timeline').css('height', myHeight + 'px');
                     $('.attachments').css('height', myHeight + 'px');
+
+                    fillAttachments();
+                    fillDescription();
+                    fillMetaInfo();
+                    fillTimeline();
+
+
                 });
 
                 // ]]>
+
+                //Function to fill timeline
+                function fillMetaInfo() {
+                    $('.caseTitle').html('10458');
+                    $('.system').html('89.300');
+                    $('.tag').html('XRE900');
+                }
+                function fillDescription() {
+                    $('.descriptionbox').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    }
+                function fillTimeline() {
+                        $('.timeline').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    }
+                function fillAttachments() {
+                    $('.attachments').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    }
+                   
+                
       </script>
    </head>
         <body>
           <div class="container">
           <div class="innercontainer">
-          <a class="alignright" href="index.html">Back</a>
-          <h2>10458</h2>
-          <p><span id="system">System: 89.300</span><span id="tag" class="alignright">Tag:XRE900</span></p>
+          <a class="alignright" href="index.html"><img alt="Back" src="images/exit.png" /></a>
+          <h2><img class="middleAlign" alt="Large Gear" src="images/gear_large.png" height="30px" /><span class="caseTitle"></span></h2>
+          <p>System: <span class="system"></span><span class="alignright">Tag: <span class="tag"></span></span></p>
           <span id="description">Desciption:</span><div class="descriptionbox"></div><hr class="clear" />
-          <span id="comments"><img alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />
-          <span id="events"><img alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><hr class="clear" />
+          <span id="timeline"><img class="middleAlign" alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />
+          <span id="attachments"><img class="middleAlign" alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><hr class="clear" />
           </div>
           </div>
         </body>

@@ -173,3 +173,8 @@ display:inline;
  font-size:12px;
  vertical-align:top;   
 }
+
+.middleAlign
+{
+    vertical-align:middle;   
+}

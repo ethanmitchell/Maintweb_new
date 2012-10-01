@@ -3,7 +3,9 @@
 <CordovaSourceDictionary>
     <FilePath Value="www\CaseOverview.html"/>
     <FilePath Value="www\images\contact.png"/>
+    <FilePath Value="www\images\exit.png"/>
     <FilePath Value="www\images\gear.png"/>
+    <FilePath Value="www\images\gear_large.png"/>
     <FilePath Value="www\images\green_case.png"/>
     <FilePath Value="www\images\maintweb_logo_generic.png"/>
     <FilePath Value="www\images\not_initiated.png"/>

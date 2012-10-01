@@ -108,7 +108,9 @@
     <Resource Include="splash.png" />
     <Content Include="www\CaseOverview.html" />
     <Content Include="www\images\contact.png" />
+    <Content Include="www\images\exit.png" />
     <Content Include="www\images\gear.png" />
+    <Content Include="www\images\gear_large.png" />
     <Content Include="www\images\green_case.png" />
     <Content Include="www\images\maintweb_logo_generic.png" />
     <Content Include="www\images\not_initiated.png" />
