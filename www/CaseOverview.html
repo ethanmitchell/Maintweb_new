@@ -34,6 +34,13 @@
             <script type="text/javascript">
                 $(document).ready(function () {
                     $('.descriptionbox').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    $('.timeline').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    $('.attachments').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+
+                    //Setting Heights
+                    var myHeight = window.innerHeight / 3;
+                    $('.timeline').css('height', myHeight + 'px');
+                    $('.attachments').css('height', myHeight + 'px');
                 });
 
                 // ]]>
@@ -45,9 +52,9 @@
           <a class="alignright" href="index.html">Back</a>
           <h2>10458</h2>
           <p><span id="system">System: 89.300</span><span id="tag" class="alignright">Tag:XRE900</span></p>
-          <p><span id="description">Desciption:</span><textarea rows="5" class="descriptionbox" readonly="readonly"></textarea></p>
-          <p><span id="comments">Comments</span></p>
-          <p><span id="events">Events</span></p>
+          <span id="description">Desciption:</span><div class="descriptionbox"></div><hr class="clear" />
+          <span id="comments"><img alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />
+          <span id="events"><img alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><hr class="clear" />
           </div>
           </div>
         </body>
