@@ -58,10 +58,20 @@
                 }
                 function fillDescription() {
                     $('.descriptionbox').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
-                    }
+                }
+                    
                 function fillTimeline() {
-                        $('.timeline').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                        $i = 1;
+                        while ($i < 4) {
+                            $('.timeline').append('<b>Title</b>');
+                            $('.timeline').append('<img class="timelineGear" src="images/gear_large.png" height="20px" /><p>' + $i + '. This is loaded from the jquery.</p>');
+                            $('.timeline').append('<p>This is loaded from the jquery.</p>');
+
+                            $i++;
+                        }
+                        
                     }
+
                 function fillAttachments() {
                     $('.attachments').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
                     }
@@ -74,6 +84,7 @@
           <div class="innercontainer">
           <a class="alignright" href="index.html"><img alt="Back" src="images/exit.png" /></a>
           <h2><img class="middleAlign" alt="Large Gear" src="images/gear_large.png" height="30px" /><span class="caseTitle"></span></h2>
+          <hr />
           <p>System: <span class="system"></span><span class="alignright">Tag: <span class="tag"></span></span></p>
           <span id="description">Desciption:</span><div class="descriptionbox"></div><hr class="clear" />
           <span id="timeline"><img class="middleAlign" alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />

@@ -10,6 +10,10 @@
     height:100%;
   }
   
+hr
+{
+ color:#902b21;   
+}
 table
 {
     width:100%;
@@ -157,18 +161,27 @@ display:inline;
 }
 .attachments, .timeline
 {
- padding:5px;
+ padding:10px;
  overflow:scroll;   
  font-size:12px;
  border:1px solid #902b21;
  background: #ffeeee;
+ font-size:12px;
+}
+
+.timeline p
+{
+    
+ border-left:2px solid #902b21;   
+ padding:4px;
+ margin:0px;
 }
 .clear
 {
     clear:both;
     border:none;
 }
-#description
+#description, #attachments, #timeline
 {
  font-size:12px;
  vertical-align:top;   
@@ -177,4 +190,11 @@ display:inline;
 .middleAlign
 {
     vertical-align:middle;   
+}
+
+.timelineGear
+{
+ float:left;   
+ margin-left:-8px;
+ margin-top: -3px;
 }
