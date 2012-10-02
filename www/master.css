@@ -187,7 +187,7 @@ display:inline;
  vertical-align:top;   
 }
 
-.middleAlign
+.topAlign
 {
     vertical-align:top;   
 }
@@ -197,4 +197,9 @@ display:inline;
  float:left;   
  margin-left:-8px;
  margin-top: -3px;
+}
+
+.statusImage
+{
+ padding-right:10px;   
 }

@@ -86,8 +86,8 @@
                     image = "pending.png";}
 
 
-                        $('.attachments').append('<img class="statusImage" src="images/' + image + '" height="15px" /><b>Firstname Lastname</b>');
-                        $('.attachments').append('<p>This is loaded from the jquery.</p>');
+                $('.attachments').append('<table><tr><td rowspan="2" width="10%"><img class="topAlign statusImage" src="images/' + image + '" height="15px" /></td><td><b>Firstname Lastname</b></td></tr><tr><td>This is loaded from the jquery.</td></tr></table>');
+                        
 
                         $i++;
                     }
@@ -100,12 +100,12 @@
           <div class="container">
           <div class="innercontainer">
           <a class="alignright" href="index.html"><img alt="Back" src="images/exit.png" /></a>
-          <h2><img class="middleAlign" alt="Large Gear" src="images/gear_large.png" height="30px" /><span class="caseTitle"></span></h2>
+          <h2><img class="topAlign" alt="Large Gear" src="images/gear_large.png" height="30px" /><span class="caseTitle"></span></h2>
           <hr />
           <p>System: <span class="system"></span><span class="alignright">Tag: <span class="tag"></span></span></p>
           <span id="description">Desciption:</span><div class="descriptionbox"></div><hr class="clear" />
-          <span id="timeline"><img class="middleAlign" alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />
-          <span id="attachments"><img class="middleAlign" alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><hr class="clear" />
+          <span id="timeline"><img class="topAlign" alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><hr class="clear" />
+          <span id="attachments"><img class="topAlign" alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><hr class="clear" />
           </div>
           </div>
         </body>
