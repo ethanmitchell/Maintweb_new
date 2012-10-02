@@ -168,7 +168,16 @@ display:inline;
  background: #ffeeee;
  font-size:12px;
 }
+.attachments td
+{
+    padding:0px;
+    margin:0px;
+}
 
+.attachments img
+{
+ padding-top:3px;   
+}
 .timeline p
 {
     

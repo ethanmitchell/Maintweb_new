@@ -85,8 +85,9 @@
                     else if($i==4){
                     image = "pending.png";}
 
-
-                $('.attachments').append('<table><tr><td rowspan="2" width="10%" valign="top"><img class="topAlign statusImage" src="images/' + image + '" height="15px" /></td><td><b>Firstname Lastname</b></td></tr><tr><td>This is loaded from the jquery.</td></tr></table>');  
+                var name = "Firstname Lastname";
+                var message = "This is loaded from the jquery.";
+                $('.attachments').append('<table><tr><td rowspan="2" width="10%" valign="top"><img class="topAlign statusImage" src="images/' + image + '" height="15px" /></td><td><b>'+name+'</b></td></tr><tr><td>'+message+'</td></tr></table>');  
                         $i++;
                     }
                     }
