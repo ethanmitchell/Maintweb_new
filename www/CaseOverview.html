@@ -125,6 +125,7 @@
                         // The inline CSS rules are used to resize the image
                         //
                         smallImage.src = "data:image/jpeg;base64," + imageData;
+                        
                     }
 
                     // Called when a photo is successfully retrieved
@@ -154,6 +155,7 @@
                         navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
                             destinationType: destinationType.DATA_URL
                         });
+                        $('.attachments').append(imageData);
                     }
 
                     // A button will call this function
@@ -163,6 +165,7 @@
                         navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
                             destinationType: destinationType.DATA_URL
                         });
+
                     }
 
                     // A button will call this function
@@ -193,6 +196,14 @@
           <span id="description">Desciption:</span><div class="descriptionbox"></div><hr class="clear" />
           <span id="timeline"><img class="topAlign" alt="gear" src="images/gear.png" />Timeline</span><div class="timeline"></div><button class="alignright" onclick="fillTimeline();">Add Comment</button><hr class="clear" />
           <span id="attachments"><img class="topAlign" alt="gear" src="images/gear.png" />Attachments</span><div class="attachments"></div><button onclick="capturePhoto();" class="alignright">Add Attachment</button><hr class="clear" />
+          </div>
+          <div>
+                <button onclick="capturePhoto();">Capture Photo</button> <br>
+                <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+                <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+                <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+                <img style="display:none;width:160px;height:160px;" id="smallImage" src="" />
+                <img style="display:none;" id="largeImage" src="" />
           </div>
           </div>
         </body>
