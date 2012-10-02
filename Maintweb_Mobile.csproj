@@ -107,6 +107,7 @@
     <None Include="Properties\DataSources\System.Xml.Linq.XElement.datasource" />
     <Resource Include="splash.png" />
     <Content Include="www\CaseOverview.html" />
+    <Content Include="www\images\approved.png" />
     <Content Include="www\images\contact.png" />
     <Content Include="www\images\exit.png" />
     <Content Include="www\images\gear.png" />
@@ -115,6 +116,9 @@
     <Content Include="www\images\maintweb_logo_generic.png" />
     <Content Include="www\images\not_initiated.png" />
     <Content Include="www\images\orange_case.png" />
+    <Content Include="www\images\pending.png" />
+    <Content Include="www\images\processed.png" />
+    <Content Include="www\images\processing.png" />
     <Content Include="www\images\wireless.png" />
     <Content Include="www\javascript\jquery.js" />
     <Content Include="www\javascript\jquery.tabify.js" />

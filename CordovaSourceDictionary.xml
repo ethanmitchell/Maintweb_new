@@ -2,6 +2,7 @@
 <!-- This file is auto-generated, do not edit! -jm -->
 <CordovaSourceDictionary>
     <FilePath Value="www\CaseOverview.html"/>
+    <FilePath Value="www\images\approved.png"/>
     <FilePath Value="www\images\contact.png"/>
     <FilePath Value="www\images\exit.png"/>
     <FilePath Value="www\images\gear.png"/>
@@ -10,6 +11,9 @@
     <FilePath Value="www\images\maintweb_logo_generic.png"/>
     <FilePath Value="www\images\not_initiated.png"/>
     <FilePath Value="www\images\orange_case.png"/>
+    <FilePath Value="www\images\pending.png"/>
+    <FilePath Value="www\images\processed.png"/>
+    <FilePath Value="www\images\processing.png"/>
     <FilePath Value="www\images\wireless.png"/>
     <FilePath Value="www\javascript\jquery.js"/>
     <FilePath Value="www\javascript\jquery.tabify.js"/>

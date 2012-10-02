@@ -73,7 +73,24 @@
                     }
 
                 function fillAttachments() {
-                    $('.attachments').html('This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery. This is loaded from the jquery');
+                    $i = 1;
+                    while ($i < 5) {
+                        var image;
+                    if($i==1){
+                    image = "approved.png";}
+                    else if($i==2){
+                    image = "processing.png";}
+                    else if($i==3){
+                    image = "processed.png";}
+                    else if($i==4){
+                    image = "pending.png";}
+
+
+                        $('.attachments').append('<img class="statusImage" src="images/' + image + '" height="15px" /><b>Firstname Lastname</b>');
+                        $('.attachments').append('<p>This is loaded from the jquery.</p>');
+
+                        $i++;
+                    }
                     }
                    
                 
